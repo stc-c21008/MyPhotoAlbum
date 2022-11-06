@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SubActivity">
+
+    <fragment
+        android:id="@+id/subTopFragment"
+        android:name="jp.suntech.c21008.com.example.myphotoalbum.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        tools:layout="@layout/fragment_top" />
+
+    <LinearLayout
+        android:id="@+id/horizontal_only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/water_downer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cold_button" />
+
+        <Button
+            android:id="@+id/water_upper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hot_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/subFragment"
+            android:name="jp.suntech.c21008.com.example.myphotoalbum.SubFragment"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            tools:layout="@layout/fragment_sub" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/subButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_button" />
+
+</LinearLayout>

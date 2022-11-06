@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyPhotoAlbum</string>
+    <string name="img_description1">Image1</string>
+    <string name="main_title">MainTitle</string>
+    <string name="sub_title">SubTitle</string>
+    <string name="hot_title">Boiling</string>
+    <string name="hot_button">hotter</string>
+    <string name="cold_title">Freezing</string>
+    <string name="cold_button">colder</string>
+    <string name="default_button">Button</string>
+</resources>
